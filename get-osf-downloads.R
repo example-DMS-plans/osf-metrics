@@ -34,7 +34,6 @@ if (Sys.getenv("OSF_PAT") == "")
 proj <- osf_retrieve_node("uadxr")
 
 #### get complete listing of files and download counts ----
-curr <- proj
 dat <- get_osf_files(proj) %>%
     mutate(downloads = 
 vapply(dat$meta, function(x) {x$attributes$extra$downloads}, 0))
