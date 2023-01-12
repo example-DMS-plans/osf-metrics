@@ -1,6 +1,7 @@
 library(RSelenium)
 library(rvest)
 library(tidyverse)
+library(lubridate)
 
 #### navigate to analytics page ----
 
@@ -92,3 +93,4 @@ dat %>%
     select(date, visits) %>%
     write.csv(paste0("visits_", Sys.Date(), ".csv"), 
               row.names = FALSE, quote = FALSE)
+
