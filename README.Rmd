@@ -1,0 +1,69 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(tidyverse)
+```
+
+# Metrics for OSF Project - 'Working Group on NIH DMSP Guidance'
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This repository contains code and data on metrics for the OSF project, [Working Group on NIH DMSP Guidance](https://osf.io/uadxr/).
+
+## Folder Contents
+
+```
+.
+├── README.Rmd                  # this README file
+├── downloads_YYYY-MM-DD.csv    # download data, retrieved on YYYY-MM-DD
+├── get-osf-downloads.R         # R script to get OSF downloads data
+├── get-osf-visits.R            # R script to get OSF visits data
+├── merge-osf-visits-data.R     # R script to combine OSF visits data
+├── visits_YYYY-MM-DD.csv       # visit data, retrieved on YYYY-MM-DD
+├── visits_combined.csv         # combined visit data
+└── wg-dmsp-osf-metrics.Rproj   # RStudio project file
+```
+
+## Stats
+
+```{r get download file, include = FALSE}
+downloads_file <- list.files(pattern = "downloads_\\d{4}-\\d{2}-\\d{2}.csv") %>%
+    tail(1) 
+```
+
+This README last generated on **`r Sys.Date()`**.
+
+Most recent data gathered on **`r str_extract(downloads_file, "\\d{4}-\\d{2}-\\d{2}")`**.
+
+### Downloads
+
+```{r}
+downloads_file %>%
+    read.csv() %>%
+    arrange(desc(downloads)) %>%
+    rename(file = name) %>%
+    select(file, downloads) %>%
+    knitr::kable()
+```
+
+### Visits
+
+```{r}
+visits <- read.csv("visits_combined.csv")
+
+ggplot(visits, 
+       aes(x = as.Date(date), y = visits)) + 
+    geom_point() + 
+    geom_line() + 
+    theme_bw(base_size = 14)
+```
