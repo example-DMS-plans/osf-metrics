@@ -36,7 +36,7 @@ proj <- osf_retrieve_node("uadxr")
 #### get complete listing of files and download counts ----
 dat <- get_osf_files(proj) %>%
     mutate(downloads = 
-vapply(dat$meta, function(x) {x$attributes$extra$downloads}, 0))
+vapply(meta, function(x) {x$attributes$extra$downloads}, 0))
 
 #### save downloads data to file ----
 dat %>%

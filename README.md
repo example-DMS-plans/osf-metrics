@@ -23,9 +23,9 @@ This repository contains code and data on metrics for the OSF project,
 
 ## Stats
 
-This README last generated on **2023-01-12**.
+This README last generated on **2023-02-10**.
 
-Most recent data gathered on **2023-01-12**.
+Most recent data gathered on **2023-02-10**.
 
 ### Downloads
 
@@ -40,16 +40,17 @@ downloads_file %>%
 
 | file                                                            | downloads |
 |:----------------------------------------------------------------|----------:|
-| Data Management and Sharing Plan Checklist for Researchers.docx |       109 |
-| 2022-10-26_ExampleDMSP_annotated.pdf                            |        70 |
-| Policy Readiness Checklist for Librarians.docx                  |        38 |
-| Data Terms related to the NIH DMS Plan and Policy.docx          |        27 |
-| Example_DMSP_Metadata.xlsx                                      |        12 |
-| Grant Glossary for Librarians.docx                              |        12 |
-| Grant Speak in Context.docx                                     |        11 |
+| Data Management and Sharing Plan Checklist for Researchers.docx |       165 |
+| 2022-10-26_ExampleDMSP_annotated.pdf                            |       130 |
+| Policy Readiness Checklist for Librarians.docx                  |        44 |
+| Data Terms related to the NIH DMS Plan and Policy.docx          |        32 |
+| Extended Reference for DMSP Checklist.docx                      |        14 |
+| Example_DMSP_Metadata.xlsx                                      |        13 |
+| Grant Glossary for Librarians.docx                              |        13 |
+| Grant Speak in Context.docx                                     |        13 |
 | license.txt                                                     |         3 |
-| Working Group on NIH DMSP Guidance - template.docx              |         2 |
-| Working Group on NIH DMSP Guidance - Style Guide.docx           |         2 |
+| Working Group on NIH DMSP Guidance - template.docx              |         3 |
+| Working Group on NIH DMSP Guidance - Style Guide.docx           |         3 |
 | README.docx                                                     |         1 |
 | Glossaries_README.docx                                          |         1 |
 
