@@ -10,6 +10,7 @@ analytics_page <- "https://osf.io/uadxr/analytics"
 rD <- rsDriver(browser = "firefox", port = 4545L, verbose = F)
 driver <- rD[["client"]]
 driver$navigate(analytics_page)
+Sys.sleep(15)
 
 #### select past month for data ----
 
@@ -93,4 +94,3 @@ dat %>%
     select(date, visits) %>%
     write.csv(paste0("visits_", Sys.Date(), ".csv"), 
               row.names = FALSE, quote = FALSE)
-
