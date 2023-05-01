@@ -23,7 +23,7 @@ This repository contains code and data on metrics for the OSF project,
 
 ## Stats
 
-This README last generated on **2023-04-03**.
+This README last generated on **2023-05-01**.
 
 Most recent data gathered on **2023-04-03**.
 
