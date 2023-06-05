@@ -23,9 +23,9 @@ This repository contains code and data on metrics for the OSF project,
 
 ## Stats
 
-This README last generated on **2023-05-01**.
+This README last generated on **2023-06-05**.
 
-Most recent data gathered on **2023-05-01**.
+Most recent data gathered on **2023-06-05**.
 
 ### Downloads
 
@@ -40,12 +40,12 @@ downloads_file %>%
 
 | file                                                            | downloads |
 |:----------------------------------------------------------------|----------:|
-| Data Management and Sharing Plan Checklist for Researchers.docx |       189 |
-| 2022-10-26_ExampleDMSP_annotated.pdf                            |       165 |
-| Policy Readiness Checklist for Librarians.docx                  |        55 |
-| Data Terms related to the NIH DMS Plan and Policy.docx          |        35 |
-| Extended Reference for DMSP Checklist.docx                      |        22 |
-| Example_DMSP_Metadata.xlsx                                      |        16 |
+| Data Management and Sharing Plan Checklist for Researchers.docx |       200 |
+| 2022-10-26_ExampleDMSP_annotated.pdf                            |       181 |
+| Policy Readiness Checklist for Librarians.docx                  |        58 |
+| Data Terms related to the NIH DMS Plan and Policy.docx          |        38 |
+| Extended Reference for DMSP Checklist.docx                      |        25 |
+| Example_DMSP_Metadata.xlsx                                      |        18 |
 | Grant Glossary for Librarians.docx                              |        14 |
 | Grant Speak in Context.docx                                     |        14 |
 | license.txt                                                     |         3 |
