@@ -19,6 +19,7 @@ date_rng_class <- "_DateRangeButton_1mhar6"
 date_btn <- driver$findElement(using = "class", 
                                value = date_rng_class)
 date_btn$clickElement()
+Sys.sleep(3)
 
 ## click on "Past month" option
 btns <- driver$findElements(using = "tag name", 
@@ -94,3 +95,4 @@ dat %>%
     select(date, visits) %>%
     write.csv(paste0("visits_", Sys.Date(), ".csv"), 
               row.names = FALSE, quote = FALSE)
+
