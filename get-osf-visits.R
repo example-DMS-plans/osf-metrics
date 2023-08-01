@@ -15,7 +15,7 @@ Sys.sleep(15)
 #### select past month for data ----
 
 ## click on date range button
-date_rng_class <- "_DateRangeButton_1mhar6"
+date_rng_class <- "_date-range-button_1mhar6"
 date_btn <- driver$findElement(using = "class", 
                                value = date_rng_class)
 date_btn$clickElement()
@@ -33,11 +33,12 @@ html <- driver$getPageSource()[[1]] %>%
     read_html()
 
 charts <- html_elements(html, "._ChartWrapper_1hff7g")
-visits_chart_idx <- which(html_elements(charts, ".panel-title") %>%
+visits_chart_idx <- which(html_elements(charts, "._panel-title_1hff7g") %>%
                               html_text() == "Unique visits")
 visits_chart <- charts[visits_chart_idx]
 
 data_points <- html_elements(visits_chart, ".c3-circle")
+stopifnot(length(data_points) > 0)
 points_x <- html_attr(data_points, "cx")
 points_y <- html_attr(data_points, "cy")
 
