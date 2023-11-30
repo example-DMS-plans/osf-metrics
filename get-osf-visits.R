@@ -27,6 +27,7 @@ btns <- driver$findElements(using = "tag name",
 btns_text <- unlist(lapply(btns, function(x) {x$getElementText()}))
 month_btn <- btns[[which(btns_text == "Past month")]]
 month_btn$clickElement()
+Sys.sleep(3)
 
 #### get data from chart ----
 html <- driver$getPageSource()[[1]] %>%
